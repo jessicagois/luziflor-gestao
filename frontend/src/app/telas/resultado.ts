@@ -61,7 +61,7 @@ import { Icone } from '../compartilhado/icone';
           @if (estoqueBaixo(p.quantidade_estoque)) {
             <p class="alerta atencao" role="alert">
               <app-icone nome="atencao" [tamanho]="30" />
-              <span><b>Atenção:</b> {{ p.quantidade_estoque === 0 ? 'acabou o ' + p.nome + ' ' + p.tamanho + '.' : 'restam só ' + p.quantidade_estoque + ' ' + p.nome + ' ' + p.tamanho + ' no estoque.' }} Pense em repor.</span>
+              <span><b>Atenção:</b> {{ p.quantidade_estoque === 0 ? 'acabou ' + p.nome + ' ' + p.tamanho + '.' : 'restam só ' + p.quantidade_estoque + ' ' + p.nome + ' ' + p.tamanho + ' no estoque.' }} Pense em repor.</span>
             </p>
           }
         }
