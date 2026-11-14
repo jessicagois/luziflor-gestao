@@ -1,0 +1,33 @@
+{
+  "name": "luziflor-gestao",
+  "version": "1.0.0",
+  "description": "PWA de controle de estoque, vendas e fiado da Luziflor Modas",
+  "private": true,
+  "engines": {
+    "node": "^22.22.0 || >=24.13.1"
+  },
+  "scripts": {
+    "start": "ng serve",
+    "build": "ng build",
+    "build:pages": "ng build --base-href /luziflor-gestao/ && node -e \"require('fs').copyFileSync('dist/luziflor-gestao/browser/index.html','dist/luziflor-gestao/browser/404.html')\"",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@angular/common": "^22.0.0",
+    "@angular/compiler": "^22.0.0",
+    "@angular/core": "^22.0.0",
+    "@angular/platform-browser": "^22.0.0",
+    "@angular/router": "^22.0.0",
+    "@angular/service-worker": "^22.0.0",
+    "dexie": "^4.0.11",
+    "rxjs": "~7.8.0",
+    "tslib": "^2.8.0"
+  },
+  "devDependencies": {
+    "@angular/build": "^22.0.0",
+    "@angular/cli": "^22.0.0",
+    "@angular/compiler-cli": "^22.0.0",
+    "typescript": "~6.0.3",
+    "vitest": "^4.0.0"
+  }
+}
