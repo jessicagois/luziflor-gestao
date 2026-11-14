@@ -1,0 +1,25 @@
+# Segredos: nunca enviar para o GitHub
+.env
+*.env
+!.env.example
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+*.db
+
+# Node / Angular
+node_modules/
+dist/
+.angular/
+out-tsc/
+coverage/
+
+# Sistema
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
