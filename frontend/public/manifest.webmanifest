@@ -1,0 +1,16 @@
+{
+  "name": "Luziflor Gestão",
+  "short_name": "Luziflor",
+  "description": "Controle de estoque, vendas e fiado da Luziflor Modas",
+  "lang": "pt-BR",
+  "display": "standalone",
+  "orientation": "portrait",
+  "start_url": "./",
+  "scope": "./",
+  "background_color": "#F6F3F5",
+  "theme_color": "#5E2453",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}
