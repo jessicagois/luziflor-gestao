@@ -12,7 +12,7 @@ import { StatusSync } from '../compartilhado/status-sync';
   imports: [RouterLink, Icone, StatusSync],
   template: `
     <header class="topo">
-      <div><h1>Luziflor Modas</h1><p class="sub">Controle da loja</p></div>
+      <div><h1><img class="logo" src="logo.svg" alt="Luziflor Modas" width="190" height="52"></h1><p class="sub">Controle da loja</p></div>
       <button class="botao-topo" type="button" (click)="sair()"><app-icone nome="sair" [tamanho]="22" />Sair</button>
     </header>
     <main class="conteudo">

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 190 52" role="img" aria-label="Luziflor Modas">
+  <!-- Logo provisória em texto. Para usar a logo oficial, substitua este arquivo (mesmo nome). -->
+  <g transform="translate(22 26)" fill="#E9C46A">
+    <ellipse rx="6" ry="11" transform="rotate(0)  translate(0 -9)"/>
+    <ellipse rx="6" ry="11" transform="rotate(72) translate(0 -9)"/>
+    <ellipse rx="6" ry="11" transform="rotate(144) translate(0 -9)"/>
+    <ellipse rx="6" ry="11" transform="rotate(216) translate(0 -9)"/>
+    <ellipse rx="6" ry="11" transform="rotate(288) translate(0 -9)"/>
+    <circle r="4.5" fill="#FFFFFF"/>
+  </g>
+  <text x="48" y="28" font-family="Georgia, 'Times New Roman', serif" font-size="25" font-style="italic" font-weight="700" fill="#FFFFFF">Luziflor</text>
+  <text x="50" y="46" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" letter-spacing="5" fill="#E9C46A">MODAS</text>
+</svg>
