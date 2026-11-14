@@ -1,9 +1,14 @@
 /* Estilos globais - seguem o protótipo da EP II e o requisito de acessibilidade (RNF04):
-   texto base de 18px, áreas de toque de no mínimo 48x48px, contraste AA e foco visível. */
+   texto base de 18px, áreas de toque de no mínimo 48x48px, contraste AA e foco visível.
+
+   Identidade visual da Luziflor Modas (ajuste pedido na 1ª validação): rosa, branco e dourado.
+   As cores da marca ficam centralizadas nestas variáveis; todas as telas usam as variáveis. */
 :root {
-  --roxo: #5E2453;
-  --roxo-claro: #F3E6F0;
-  --fundo: #F6F3F5;
+  --marca: #A3195B;          /* rosa da loja - contraste 7,4:1 com branco */
+  --marca-clara: #FCEEF4;    /* rosa claro para opções selecionadas */
+  --dourado: #E9C46A;        /* dourado decorativo (bordas e logo) */
+  --dourado-escuro: #7A5A0B; /* dourado para textos pequenos - contraste 6,4:1 */
+  --fundo: #FDF7FA;
   --texto: #1F1A1E;
   --texto-2: #4A424D;
   --borda: #6B6170;
@@ -40,9 +45,11 @@ ul.lista { list-style: none; margin: 0; padding: 0; display: flex; flex-directio
 :focus-visible { outline: 3px solid var(--foco); outline-offset: 3px; }
 
 .topo {
-  background: var(--roxo); color: #fff; padding: 16px 20px;
+  background: var(--marca); color: #fff; padding: 16px 20px;
   display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  border-bottom: 4px solid var(--dourado);
 }
+.logo { display: block; height: 52px; width: auto; }
 .topo h1 { font-size: 1.35rem; }
 .topo .sub { font-size: .85rem; opacity: .92; }
 .titulo-centro { flex: 1; text-align: center; margin-right: 84px; }
@@ -68,11 +75,11 @@ ul.lista { list-style: none; margin: 0; padding: 0; display: flex; flex-directio
 /* Botões: área de toque ampla, ícone + texto */
 .botao {
   display: flex; align-items: center; gap: 14px; width: 100%; min-height: 64px; padding: 12px 18px;
-  border: 2px solid var(--roxo); border-radius: 14px; background: #fff; color: var(--roxo);
+  border: 2px solid var(--marca); border-radius: 14px; background: #fff; color: var(--marca);
   font: inherit; font-size: 1.1rem; font-weight: 700; text-align: left; text-decoration: none; cursor: pointer;
 }
 .botao small { display: block; font-size: .85rem; font-weight: 500; }
-.botao.principal { background: var(--roxo); color: #fff; }
+.botao.principal { background: var(--marca); color: #fff; box-shadow: inset 0 -4px 0 var(--dourado); }
 .botao.grande { min-height: 88px; font-size: 1.35rem; }
 .botao.centro { justify-content: center; }
 .botao.medio { min-height: 52px; font-size: 1rem; }
@@ -90,7 +97,7 @@ ul.lista { list-style: none; margin: 0; padding: 0; display: flex; flex-directio
 .campo-com-icone .campo { padding-left: 48px; }
 
 .selecionavel { width: 100%; text-align: left; font: inherit; color: inherit; cursor: pointer; border-width: 2px; }
-.selecionavel.marcado { border: 3px solid var(--roxo); }
+.selecionavel.marcado { border: 3px solid var(--marca); }
 
 .linha-opcoes { display: flex; gap: 10px; flex-wrap: wrap; }
 .linha-opcoes > * { flex: 1; }
@@ -101,12 +108,12 @@ ul.lista { list-style: none; margin: 0; padding: 0; display: flex; flex-directio
   gap: 6px; flex-wrap: wrap; cursor: pointer;
 }
 .opcao small { width: 100%; text-align: center; font-size: .8rem; font-weight: 500; }
-.opcao.marcado { border: 3px solid var(--roxo); background: var(--roxo-claro); color: var(--roxo); }
+.opcao.marcado { border: 3px solid var(--marca); background: var(--marca-clara); color: var(--marca); }
 .opcao.desligado { border-style: dashed; background: #F1EEF0; color: var(--texto-2); cursor: not-allowed; }
 
 .quantidade { display: flex; align-items: center; gap: 14px; }
 .botao-qtd {
-  width: 56px; height: 56px; border: 2px solid var(--roxo); border-radius: 12px; background: #fff; color: var(--roxo);
+  width: 56px; height: 56px; border: 2px solid var(--marca); border-radius: 12px; background: #fff; color: var(--marca);
   display: inline-flex; align-items: center; justify-content: center; cursor: pointer;
 }
 .numero { font-size: 1.6rem; font-weight: 800; min-width: 40px; text-align: center; }
@@ -119,6 +126,6 @@ ul.lista { list-style: none; margin: 0; padding: 0; display: flex; flex-directio
 .alerta.sucesso { background: var(--verde-fundo); color: var(--verde-texto); border-color: var(--verde); font-size: 1.3rem; font-weight: 800; }
 .alerta.atencao { background: var(--amarelo-fundo); color: var(--amarelo-texto); border-color: var(--amarelo); }
 .alerta.erro { background: var(--vermelho-fundo); color: var(--vermelho); border-color: var(--vermelho); font-weight: 600; font-size: .95rem; padding: 10px 12px; }
-.confirmacao { background: var(--roxo-claro); border-radius: 12px; padding: 12px; display: flex; flex-direction: column; gap: 10px; }
+.confirmacao { background: var(--marca-clara); border-radius: 12px; padding: 12px; display: flex; flex-direction: column; gap: 10px; }
 
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }

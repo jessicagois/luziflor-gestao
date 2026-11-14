@@ -6,7 +6,7 @@ import { SyncService } from '../core/sync.service';
 @Component({
   selector: 'app-entrar',
   template: `
-    <header class="topo"><div><h1>Luziflor Modas</h1><p class="sub">Controle da loja</p></div></header>
+    <header class="topo"><div><h1><img class="logo" src="logo.svg" alt="Luziflor Modas" width="190" height="52"></h1><p class="sub">Controle da loja</p></div></header>
     <main class="conteudo">
       <form class="cartao" (submit)="entrar($event)" novalidate>
         <h2>Entrar</h2>
